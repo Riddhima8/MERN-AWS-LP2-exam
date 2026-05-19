@@ -1,0 +1,10 @@
+In ec2 connect A:
+Nano z.txt
+
+In terminal 1 - in downloads 
+Scp -i xyz.pem ubuntu@a_ip:/home/ubuntu/z.txt .
+
+In terminal 2
+Scp -i xyz.pem z.txt ubuntu@b_ip:
+Ssh -i xyz.pem ubuntu@b_ip
+Cat z.txt
